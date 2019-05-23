@@ -1,6 +1,8 @@
 import java.util.Vector;
 
 public class Client {
+    private static final double EUROS_PER_UNITAT_DE_COST = 30;
+
     private String nif;
     private String nom;
     private String telefon;
@@ -77,7 +79,7 @@ public class Client {
                     lloguer.getVehicle().getMarca() +
                     " " +
                     lloguer.getVehicle().getModel() + ": " +
-                    (lloguer.quantitat() * 30) + "€" + "\n";
+                    (lloguer.quantitatUnidadesDeCoste() * EUROS_PER_UNITAT_DE_COST) + "€" + "\n";
         }
         return resultatDetall;
     }
@@ -93,7 +95,7 @@ public class Client {
     private double importTotal() {
         int resultImportTotal = 0;
         for (Lloguer lloguer : lloguers) {
-            resultImportTotal += lloguer.quantitat() * 30;
+            resultImportTotal += lloguer.quantitatUnidadesDeCoste() * EUROS_PER_UNITAT_DE_COST;
         }
         return resultImportTotal;
     }

@@ -50,26 +50,26 @@ public class Lloguer {
             this.vehicle = vehicle;
         }
 
-    public double quantitat() {
-        double quantitat = 0;
+    public double quantitatUnidadesDeCoste() {
+        double unidadDeCoste = 0;
         switch (getVehicle().getCategoria()) {
             case Vehicle.BASIC:
-                quantitat += UNIDADES_COSTE_BASIC_HASTA_TRES_DIAS;
+                unidadDeCoste += UNIDADES_COSTE_BASIC_HASTA_TRES_DIAS;
                 if (getDies() > NUMERO_DIAS_INICIALES_BASIC) {
-                    quantitat += (getDies() - NUMERO_DIAS_INICIALES_BASIC) * MULTIPLICATOR_BASIC_MAS_DE_TRES_DIAS;
+                    unidadDeCoste += (getDies() - NUMERO_DIAS_INICIALES_BASIC) * MULTIPLICATOR_BASIC_MAS_DE_TRES_DIAS;
                 }
                 break;
             case Vehicle.GENERAL:
-                quantitat += UNIDADES_COSTE_GENERAL_HASTA_DOS_DIAS;
+                unidadDeCoste += UNIDADES_COSTE_GENERAL_HASTA_DOS_DIAS;
                 if (getDies() > NUMERO_DIAS_INICIALES_GENERAL) {
-                    quantitat += (getDies() - NUMERO_DIAS_INICIALES_GENERAL) * MULTIPLICATOR_GENERAL_MAS_DE_DOS_DIAS;
+                    unidadDeCoste += (getDies() - NUMERO_DIAS_INICIALES_GENERAL) * MULTIPLICATOR_GENERAL_MAS_DE_DOS_DIAS;
                 }
                 break;
             case Vehicle.LUXE:
-                quantitat += getDies() * MULTIPLICATOR_LUXE;
+                unidadDeCoste += getDies() * MULTIPLICATOR_LUXE;
                 break;
         }
-        return quantitat;
+        return unidadDeCoste;
     }
 
     public int bonificacions() {
