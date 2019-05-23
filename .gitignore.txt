@@ -9,6 +9,9 @@
 *.pyc
 
 # paquets i comprimits
+*.iml
+*.ipr
+*.iws
 *.7z
 *.dmg
 *.gz
