@@ -166,8 +166,8 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 360.0€\n" +
-                "Import a pagar: 360.0€\n" +
+                "\tVista Tata: 1800.0€\n" +
+                "Import a pagar: 1800.0€\n" +
                 "Punts guanyats: 2\n");
     }
 

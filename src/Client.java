@@ -13,25 +13,42 @@ public class Client {
         this.lloguers = new Vector<Lloguer>();
     }
 
-    public String getNif()     { return nif;     }
-    public String getNom()     { return nom;     }
-    public String getTelefon() { return telefon; }
+    public String getNif() {
+        return nif;
+    }
 
-    public void setNif(String nif) { this.nif = nif; }
-    public void setNom(String nom) { this.nom = nom; }
+    public String getNom() {
+        return nom;
+    }
+
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
     public void setTelefon(String telefon) {
         this.telefon = telefon;
     }
+
     public void afegeix(Lloguer lloguer) {
-        if (!lloguers.contains(lloguer) ) {
+        if (!lloguers.contains(lloguer)) {
             lloguers.add(lloguer);
         }
     }
+
     public void elimina(Lloguer lloguer) {
-        if (lloguers.contains(lloguer) ) {
+        if (lloguers.contains(lloguer)) {
             lloguers.remove(lloguer);
         }
     }
+
     public boolean conte(Lloguer lloguer) {
         return lloguers.contains(lloguer);
     }
@@ -42,18 +59,11 @@ public class Client {
         String resultat = "Informe de lloguers del client " +
                 getNom() +
                 " (" + getNif() + ")\n";
-        for (Lloguer lloguer: lloguers) {
+        for (Lloguer lloguer : lloguers) {
 
             double quantitat = lloguer.quantitat();
+            bonificacions += bonificacionsDeLloguer(lloguer);
 
-            // afegeix lloguers freqüents
-            bonificacions ++;
-
-            // afegeix bonificació per dos dies de lloguer de Luxe
-            if (lloguer.getVehicle().getCategoria() == Vehicle.LUXE &&
-                    lloguer.getDies()>1 ) {
-                bonificacions ++;
-            }
 
             // composa els resultats d'aquest lloguer
             resultat += "\t" +
@@ -68,6 +78,19 @@ public class Client {
         resultat += "Import a pagar: " + total + "€\n" +
                 "Punts guanyats: " + bonificacions + "\n";
         return resultat;
+    }
+
+    private int bonificacionsDeLloguer(Lloguer lloguer) {
+        int bonificacions = 0;
+        // afegeix lloguers freqüents
+        bonificacions++;
+
+        // afegeix bonificació per dos dies de lloguer de Luxe
+        if (lloguer.getVehicle().getCategoria() == Vehicle.LUXE &&
+                lloguer.getDies() > 1) {
+            bonificacions++;
+        }
+        return bonificacions;
     }
 
 }
