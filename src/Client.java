@@ -23,7 +23,7 @@ public class Client {
         this.telefon = telefon;
     }
     public void afegeix(Lloguer lloguer) {
-        if (! lloguers.contains(lloguer) ) {
+        if (!lloguers.contains(lloguer) ) {
             lloguers.add(lloguer);
         }
     }

@@ -8,12 +8,14 @@ public class Vehicle {
     public static final String LUXE = "LUXE";
     public static final String GENERAL = "GENERAL";
 
+    public Vehicle() {
 
+    }
 
-    public Vehicle(String model, String marka,String categoria) {
+    public Vehicle(String model, String marka, String categoria) {
         this.model = model;
         this.marka = marka;
-        this.categoria=categoria;
+        this.categoria = categoria;
     }
 
     public String getModel() {

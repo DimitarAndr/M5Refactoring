@@ -3,42 +3,42 @@ import java.util.Date;
 public class Lloguer {
 
 
-    private Date data;
-    private int dies;
-    private Vehicle vehicle;
+        private Date data;
+        private int dies;
+        private Vehicle vehicle;
 
 
-    public Lloguer(Date data, int dies) {
-        this.data = data;
-        this.dies = dies;
-    }
+        public Lloguer(Date data, int dies) {
+            this.data = data;
+            this.dies = dies;
+        }
 
-    public Lloguer(Date data, int dies, Vehicle vehicle) {
-        this(data, dies);
-        this.vehicle = vehicle;
-    }
+        public Lloguer(Date data, int dies, Vehicle vehicle) {
+            this(data, dies);
+            this.vehicle = vehicle;
+        }
 
-    public Date getData() {
-        return this.data;
-    }
+        public Date getData() {
+            return this.data;
+        }
 
-    public void setData(Date data) {
-        this.data = data;
-    }
+        public void setData(Date data) {
+            this.data = data;
+        }
 
-    public int getDies() {
-        return this.dies;
-    }
+        public int getDies() {
+            return this.dies;
+        }
 
-    public void setDies(int dies) {
-        this.dies = dies;
-    }
+        public void setDies(int dies) {
+            this.dies = dies;
+        }
 
-    public Vehicle getVehicle() {
-        return this.vehicle;
-    }
+        public Vehicle getVehicle() {
+            return this.vehicle;
+        }
 
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
+        public void setVehicle(Vehicle vehicle) {
+            this.vehicle = vehicle;
+        }
 }
