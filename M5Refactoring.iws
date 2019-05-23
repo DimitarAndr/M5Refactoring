@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95f5fdf0-6974-4e50-9bae-ceb44ee793a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
+    <list default="true" id="95f5fdf0-6974-4e50-9bae-ceb44ee793a0" name="Default" comment="Exercicio 5 y 6 Junit Tests">
       <change beforePath="$PROJECT_DIR$/M5Refactoring.iws" beforeDir="false" afterPath="$PROJECT_DIR$/M5Refactoring.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M5Refactoring/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M5Refactoring/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M5Refactoring/Lloguer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M5Refactoring/Lloguer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,33 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+            <state relative-caret-position="379">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
                 <element signature="e#664#665#0" expanded="true" />
                 <element signature="e#702#703#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M5Refactoring.iws" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/M5Refactoring.iws">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -64,8 +58,8 @@
       <file leaf-file-name="Lloguer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lloguer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="538">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -73,8 +67,8 @@
       <file leaf-file-name="GestorLloguersLite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GestorLloguersLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="71" lean-forward="true" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+            <state relative-caret-position="437">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +79,20 @@
       <file leaf-file-name="TestCrearInforme.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestCrearInforme.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+            <state relative-caret-position="798">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../M5RefactoringOLD/src/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -112,10 +115,10 @@
         <option value="$PROJECT_DIR$/../M5RefactoringOLD/src/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/GestorLloguersLite.java" />
+        <option value="$PROJECT_DIR$/.gitignore.txt" />
         <option value="$PROJECT_DIR$/src/TestCrearInforme.java" />
         <option value="$PROJECT_DIR$/src/Lloguer.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
-        <option value="$PROJECT_DIR$/.gitignore.txt" />
       </list>
     </option>
   </component>
@@ -147,6 +150,11 @@
               <item name="M5Refactoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="M5RefactoringNEW" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="M5Refactoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="M5RefactoringNEW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -160,6 +168,7 @@
     <property name="SearchEverywhereHistoryKey" value="Vehicle&#9;FILE&#9;file://D:/DAW/M5RefactoringNEW/src/Vehicle.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -178,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCrearInforme.testInformeDosDiasBasicGeneral">
+  <component name="RunManager" selected="JUnit.TestCrearInforme">
     <configuration name="GestorLloguersLite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GestorLloguersLite" />
       <module name="M5Refactoring" />
@@ -187,13 +196,47 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCrearInforme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="M5Refactoring" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestCrearInforme" />
-      <option name="METHOD_NAME" value="testInformeDosDiasBasicGeneral" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestCrearInforme.testInforme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M5Refactoring" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCrearInforme" />
+      <option name="METHOD_NAME" value="testInforme" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestCrearInforme.testInformeGeneralUnDia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="M5Refactoring" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCrearInforme" />
+      <option name="METHOD_NAME" value="testInformeGeneralUnDia" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -211,40 +254,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestCrearInforme" />
       <option name="METHOD_NAME" value="testInformeLuxeDiezDias" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestCrearInforme.testInformeLuxeDosDias" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="M5Refactoring" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCrearInforme" />
-      <option name="METHOD_NAME" value="testInformeLuxeDosDias" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestCrearInforme.testInformeLuxeUnDia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="M5Refactoring" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCrearInforme" />
-      <option name="METHOD_NAME" value="testInformeLuxeUnDia" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -294,19 +303,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestCrearInforme.testInformeLuxeDosDias" />
-      <item itemvalue="JUnit.TestCrearInforme.testInformeLuxeUnDia" />
-      <item itemvalue="JUnit.TestCrearInforme.testInformeDosDiasBasicGeneral" />
+      <item itemvalue="JUnit.TestCrearInforme.testInformeGeneralUnDia" />
+      <item itemvalue="JUnit.TestCrearInforme" />
       <item itemvalue="JUnit.TestCrearInforme.testInformeLuxeDiezDias" />
       <item itemvalue="Application.GestorLloguersLite" />
+      <item itemvalue="JUnit.TestCrearInforme.testInforme" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCrearInforme.testInformeDosDiasBasicGeneral" />
+        <item itemvalue="JUnit.TestCrearInforme" />
+        <item itemvalue="JUnit.TestCrearInforme.testInforme" />
         <item itemvalue="Application.GestorLloguersLite" />
         <item itemvalue="JUnit.TestCrearInforme.testInformeLuxeDiezDias" />
-        <item itemvalue="JUnit.TestCrearInforme.testInformeLuxeDosDias" />
-        <item itemvalue="JUnit.TestCrearInforme.testInformeLuxeUnDia" />
+        <item itemvalue="JUnit.TestCrearInforme.testInformeGeneralUnDia" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +330,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558557320524</updated>
       <workItem from="1558557324872" duration="5244000" />
-      <workItem from="1558602568147" duration="1756000" />
+      <workItem from="1558602568147" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="Exercici 4. Preparant el terreny: control de versions: Adding .gitignore.txt and README.txt&quot;">
       <created>1558604467900</created>
@@ -330,43 +339,57 @@
       <option name="project" value="LOCAL" />
       <updated>1558604467902</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercicio 5 y 6 Junit Tests">
+      <created>1558605169750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558605169750</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Exercici 7: Quantitat per lloguer : Extracting method quantitatPerLloguer()">
+      <created>1558605502170</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558605502170</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCrearInforme_testInformeDosDiasBasicGeneral - 2019.05.23 at 00h 48m 51s.xml">
-      <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCrearInforme_testInformeDosDiasBasicGeneral - 2019.05.23 at 00h 53m 21s.xml">
-      <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCrearInforme_testInformeDosDiasBasicGeneral - 2019.05.23 at 00h 54m 03s.xml">
-      <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCrearInforme_testInformeDosDiasBasicGeneral - 2019.05.23 at 01h 00m 06s.xml">
-      <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCrearInforme_testInformeDosDiasBasicGeneral - 2019.05.23 at 01h 00m 46s.xml">
-      <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCrearInforme_testInformeLuxeDosDias - 2019.05.23 at 11h 27m 27s.xml">
-      <configuration name="TestCrearInforme.testInformeLuxeDosDias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCrearInforme_testInformeLuxeDiezDias - 2019.05.23 at 11h 30m 17s.xml">
+    <history-entry file="TestCrearInforme_testInformeLuxeDiezDias - 2019.05.23 at 12h 16m 32s.xml">
       <configuration name="TestCrearInforme.testInformeLuxeDiezDias" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCrearInforme_testInformeLuxeDiezDias - 2019.05.23 at 11h 30m 50s.xml">
-      <configuration name="TestCrearInforme.testInformeLuxeDiezDias" configurationId="JUnit" />
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 16m 39s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCrearInforme_testInformeLuxeDiezDias - 2019.05.23 at 11h 31m 00s.xml">
-      <configuration name="TestCrearInforme.testInformeLuxeDiezDias" configurationId="JUnit" />
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 25m 18s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCrearInforme_testInformeDosDiasBasicGeneral - 2019.05.23 at 11h 35m 01s.xml">
-      <configuration name="TestCrearInforme.testInformeDosDiasBasicGeneral" configurationId="JUnit" />
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 26m 04s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 26m 25s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 28m 19s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCrearInforme_testInforme - 2019.05.23 at 12h 29m 02s.xml">
+      <configuration name="TestCrearInforme.testInforme" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 29m 39s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 31m 38s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCrearInforme - 2019.05.23 at 12h 32m 03s.xml">
+      <configuration name="TestCrearInforme" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7000000" />
+    <option name="totallyTimeSpent" value="9757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -411,19 +434,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercici 4. Preparant el terreny: control de versions: Adding .gitignore.txt and README.txt&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercici 4. Preparant el terreny: control de versions: Adding .gitignore.txt and README.txt&quot;" />
+    <MESSAGE value="Exercicio 5 y 6 Junit Tests" />
+    <MESSAGE value="Exercici 7: Quantitat per lloguer : Extracting method quantitatPerLloguer()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercici 7: Quantitat per lloguer : Extracting method quantitatPerLloguer()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Client.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -432,6 +449,16 @@
         <state relative-caret-position="1539">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
           <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
             <element signature="e#664#665#0" expanded="true" />
             <element signature="e#702#703#0" expanded="true" />
           </folding>
@@ -479,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../M5RefactoringOLD/src/Lloguer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -500,44 +520,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+    <entry file="file://$PROJECT_DIR$/.gitignore.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2269">
-          <caret line="166" column="58" selection-start-line="166" selection-start-column="58" selection-end-line="166" selection-end-column="58" />
+        <state relative-caret-position="285">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/M5Refactoring.iws">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="247">
+          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GestorLloguersLite.java">
+    <entry file="file://$PROJECT_DIR$/../M5RefactoringOLD/src/Lloguer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="71" lean-forward="true" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestCrearInforme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lloguer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="-361">
+          <caret line="11" column="25" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -554,28 +554,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="77" column="60" lean-forward="true" selection-start-line="77" selection-start-column="60" selection-end-line="77" selection-end-column="60" />
+        <state relative-caret-position="323">
+          <caret line="220" column="60" lean-forward="true" selection-start-line="220" selection-start-column="60" selection-end-line="220" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lloguer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GestorLloguersLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/M5Refactoring.iws">
+    <entry file="file://$PROJECT_DIR$/../M5RefactoringOLD/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="208">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore.txt">
+    <entry file="file://$PROJECT_DIR$/src/TestCrearInforme.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="798">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
