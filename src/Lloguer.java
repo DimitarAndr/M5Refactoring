@@ -2,6 +2,14 @@ import java.util.Date;
 
 public class Lloguer {
 
+    private static final double NUMERO_DIAS_INICIALES_BASIC =3;
+    private static final double NUMERO_DIAS_INICIALES_GENERAL =2;
+    private static final double UNIDADES_COSTE_BASIC_HASTA_TRES_DIAS =3;
+    private static final double UNIDADES_COSTE_GENERAL_HASTA_DOS_DIAS =4;
+    private static final double MULTIPLICATOR_BASIC_MAS_DE_TRES_DIAS=1.5;
+    private static final double MULTIPLICATOR_GENERAL_MAS_DE_DOS_DIAS=2.5;
+    private static final double MULTIPLICATOR_LUXE=6;
+
 
         private Date data;
         private int dies;
@@ -46,19 +54,19 @@ public class Lloguer {
         double quantitat = 0;
         switch (getVehicle().getCategoria()) {
             case Vehicle.BASIC:
-                quantitat += 3;
-                if (getDies() > 3) {
-                    quantitat += (getDies() - 3) * 1.5;
+                quantitat += UNIDADES_COSTE_BASIC_HASTA_TRES_DIAS;
+                if (getDies() > NUMERO_DIAS_INICIALES_BASIC) {
+                    quantitat += (getDies() - NUMERO_DIAS_INICIALES_BASIC) * MULTIPLICATOR_BASIC_MAS_DE_TRES_DIAS;
                 }
                 break;
             case Vehicle.GENERAL:
-                quantitat += 4;
-                if (getDies() > 2) {
-                    quantitat += (getDies() - 2) * 2.5;
+                quantitat += UNIDADES_COSTE_GENERAL_HASTA_DOS_DIAS;
+                if (getDies() > NUMERO_DIAS_INICIALES_GENERAL) {
+                    quantitat += (getDies() - NUMERO_DIAS_INICIALES_GENERAL) * MULTIPLICATOR_GENERAL_MAS_DE_DOS_DIAS;
                 }
                 break;
             case Vehicle.LUXE:
-                quantitat += getDies() * 6;
+                quantitat += getDies() * MULTIPLICATOR_LUXE;
                 break;
         }
         return quantitat;
