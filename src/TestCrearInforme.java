@@ -22,8 +22,47 @@ public class TestCrearInforme {
         clientUno.afegeix(lloguerBasic);
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 90.0€\n" +
+                "\tTata Vista: 90.0€\n" +
                 "Import a pagar: 90.0€\n" +
+                "Punts guanyats: 1\n");
+    }
+
+
+    @Test
+    public void testInformeTresDias() throws ParseException {
+        // demostració de construcció d'un vehicle de categoria BASIC
+        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.BASIC);
+
+        // demostració de construccuó d'un lloguer amb una data
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
+        Date date = dateFormat.parse("2/8/2013");
+        Lloguer lloguerBasic = new Lloguer(date, 3, vehicleBasic);
+
+        Client clientUno = new Client("12345678", "Dimitar", "654111222");
+        clientUno.afegeix(lloguerBasic);
+
+        assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
+                "\tTata Vista: 90.0€\n" +
+                "Import a pagar: 90.0€\n" +
+                "Punts guanyats: 1\n");
+    }
+
+    @Test
+    public void testInformeQuatroDias() throws ParseException {
+        // demostració de construcció d'un vehicle de categoria BASIC
+        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.BASIC);
+
+        // demostració de construccuó d'un lloguer amb una data
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
+        Date date = dateFormat.parse("2/8/2013");
+        Lloguer lloguerBasic = new Lloguer(date, 4, vehicleBasic);
+
+        Client clientUno = new Client("12345678", "Dimitar", "654111222");
+        clientUno.afegeix(lloguerBasic);
+
+        assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
+                "\tTata Vista: 135.0€\n" +
+                "Import a pagar: 135.0€\n" +
                 "Punts guanyats: 1\n");
     }
 
@@ -60,7 +99,7 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 120.0€\n" +
+                "\tTata Vista: 120.0€\n" +
                 "Import a pagar: 120.0€\n" +
                 "Punts guanyats: 1\n");
     }
@@ -80,7 +119,7 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 195.0€\n" +
+                "\tTata Vista: 195.0€\n" +
                 "Import a pagar: 195.0€\n" +
                 "Punts guanyats: 1\n");
     }
@@ -101,7 +140,7 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 720.0€\n" +
+                "\tTata Vista: 720.0€\n" +
                 "Import a pagar: 720.0€\n" +
                 "Punts guanyats: 1\n");
     }
@@ -122,7 +161,7 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 180.0€\n" +
+                "\tTata Vista: 180.0€\n" +
                 "Import a pagar: 180.0€\n" +
                 "Punts guanyats: 1\n");
     }
@@ -142,7 +181,7 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 360.0€\n" +
+                "\tTata Vista: 360.0€\n" +
                 "Import a pagar: 360.0€\n" +
                 "Punts guanyats: 2\n");
     }
@@ -166,9 +205,68 @@ public class TestCrearInforme {
 
 
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 1800.0€\n" +
+                "\tTata Vista: 1800.0€\n" +
                 "Import a pagar: 1800.0€\n" +
                 "Punts guanyats: 2\n");
+    }
+
+
+@Test
+    public void testInformeHTML() throws ParseException {
+
+        // demostració de construcció d'un vehicle de categoria BASIC
+        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.BASIC);
+
+
+        // demostració de construccuó d'un lloguer amb una data
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
+        Date date = dateFormat.parse("2/8/2013");
+        Lloguer lloguerBasic = new Lloguer(date, 2, vehicleBasic);
+
+
+        Client clientUno = new Client("12345678", "Dimitar", "654111222");
+        clientUno.afegeix(lloguerBasic);
+
+
+        assertEquals(clientUno.informeHTML(),"<h1>Informe de lloguers</h1>\n"+
+                 "<p>Informe de lloguers del client <em>Dimitar</em> (<strong>12345678</strong>)</p>\n" +
+                 "<table>\n" +
+                 "<tr><td><strong>Marca</strong></td><td><strong>Model</strong></td><td><strong>Import</strong></td></tr>\n" +
+                 "\t<tr><td>Tata</td><td>Vista</td><td>90.0€</td></tr>\n" +
+                 "</table>\n" +
+                 "<p>Import a pagar: <em>90.0€</em></p>\n" +
+                 "<p>Punts guanyats: <em>1</em></p>");
+    }
+
+    @Test
+    public void testInformeHtmlMasVehiculos() throws ParseException {
+
+        // demostració de construcció d'un vehicle de categoria BASIC
+        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.BASIC);
+        Vehicle vehicleDos = new Vehicle("Mercedes", "SLK", Vehicle.LUXE);
+
+
+        // demostració de construccuó d'un lloguer amb una data
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
+        Date date = dateFormat.parse("2/8/2013");
+        Lloguer lloguerBasic = new Lloguer(date, 2, vehicleBasic);
+        Lloguer lloguerDos = new Lloguer(date, 3, vehicleDos);
+
+
+        Client clientUno = new Client("12345678", "Dimitar", "654111222");
+        clientUno.afegeix(lloguerBasic);
+        clientUno.afegeix(lloguerDos);
+
+
+        assertEquals(clientUno.informeHTML(),"<h1>Informe de lloguers</h1>\n"+
+                "<p>Informe de lloguers del client <em>Dimitar</em> (<strong>12345678</strong>)</p>\n" +
+                "<table>\n" +
+                "<tr><td><strong>Marca</strong></td><td><strong>Model</strong></td><td><strong>Import</strong></td></tr>\n" +
+                "\t<tr><td>Mercedes</td><td>SLK</td><td>360.0€</td></tr>\n" +
+                "\t<tr><td>Mercedes</td><td>SLK</td><td>540.0€</td></tr>\n" +
+                "</table>\n" +
+                "<p>Import a pagar: <em>900.0€</em></p>\n" +
+                "<p>Punts guanyats: <em>4</em></p>");
     }
 
 

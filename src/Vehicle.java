@@ -1,7 +1,7 @@
 public class Vehicle {
 
-    private static String model;
     private static String marka;
+    private static String model;
     private static String categoria;
 
     public static final String BASIC = "BASIC";
@@ -12,7 +12,7 @@ public class Vehicle {
 
     }
 
-    public Vehicle(String model, String marka, String categoria) {
+    public Vehicle(String marka, String model, String categoria) {
         this.model = model;
         this.marka = marka;
         this.categoria = categoria;
