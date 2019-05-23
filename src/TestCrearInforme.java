@@ -171,29 +171,6 @@ public class TestCrearInforme {
                 "Punts guanyats: 2\n");
     }
 
-    @Test
-    public void testInformeLuxeCincoDias() throws ParseException {
-        // demostració de construcció d'un vehicle de categoria BASIC
-        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.LUXE);
-
-
-        // demostració de construccuó d'un lloguer amb una data
-        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
-        Date date = dateFormat.parse("2/8/2013");
-        Date dateDos = dateFormat.parse("6/8/2013");
-        Lloguer lloguerBasic = new Lloguer(date, 5, vehicleBasic);
-
-
-        Client clientUno = new Client("12345678", "Dimitar", "654111222");
-        clientUno.afegeix(lloguerBasic);
-
-
-
-        assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
-                "\tVista Tata: 900.0€\n" +
-                "Import a pagar: 900.0€\n" +
-                "Punts guanyats: 2\n");
-    }
 
 
 }
