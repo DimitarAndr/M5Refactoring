@@ -1,8 +1,8 @@
 public class Vehicle {
 
-    private static String marka;
-    private static String model;
-    private static String categoria;
+    private String marka;
+    private String model;
+    private String categoria;
 
     public static final String BASIC = "BASIC";
     public static final String LUXE = "LUXE";
@@ -34,11 +34,8 @@ public class Vehicle {
         this.marka = marka;
     }
 
-    public static String getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public static void setCategoria(String categoria) {
-        Vehicle.categoria = categoria;
-    }
 }

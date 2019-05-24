@@ -27,6 +27,57 @@ public class TestCrearInforme {
                 "Punts guanyats: 1\n");
     }
 
+    @Test
+    public void testInformeDosCoches() throws ParseException {
+        // demostració de construcció d'un vehicle de categoria BASIC
+        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.BASIC);
+        Vehicle vehicleGeneral = new Vehicle("Ford", "Focus", Vehicle.GENERAL);
+
+        // demostració de construccuó d'un lloguer amb una data
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
+        Date date = dateFormat.parse("2/8/2013");
+        Lloguer lloguerBasic = new Lloguer(date, 2, vehicleBasic);
+        Lloguer lloguerGeneral = new Lloguer(date, 4, vehicleGeneral);
+
+        Client clientUno = new Client("12345678", "Dimitar", "654111222");
+        clientUno.afegeix(lloguerBasic);
+        clientUno.afegeix(lloguerGeneral);
+
+        assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
+                "\tTata Vista: 90.0€\n" +
+                "\tFord Focus: 270.0€\n" +
+                "Import a pagar: 360.0€\n" +
+                "Punts guanyats: 2\n");
+    }
+
+    @Test
+    public void testInformeTresCoches() throws ParseException {
+        // demostració de construcció d'un vehicle de categoria BASIC
+        Vehicle vehicleBasic = new Vehicle("Tata", "Vista", Vehicle.BASIC);
+        Vehicle vehicleGeneral = new Vehicle("Ford", "Focus", Vehicle.GENERAL);
+        Vehicle vehicleLuxe = new Vehicle("Mercedes", "SLK", Vehicle.LUXE);
+
+        // demostració de construccuó d'un lloguer amb una data
+        SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
+        Date date = dateFormat.parse("2/8/2013");
+        Lloguer lloguerBasic = new Lloguer(date, 2, vehicleBasic);
+        Lloguer lloguerGeneral = new Lloguer(date, 4, vehicleGeneral);
+        Lloguer lloguerLuxe = new Lloguer(date, 3, vehicleLuxe);
+
+        Client clientUno = new Client("12345678", "Dimitar", "654111222");
+        clientUno.afegeix(lloguerBasic);
+        clientUno.afegeix(lloguerGeneral);
+        clientUno.afegeix(lloguerLuxe);
+
+        assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
+                "\tTata Vista: 90.0€\n" +
+                "\tFord Focus: 270.0€\n" +
+                "\tMercedes SLK: 540.0€\n" +
+                "Import a pagar: 900.0€\n" +
+                "Punts guanyats: 4\n");
+    }
+
+
 
     @Test
     public void testInformeTresDias() throws ParseException {
@@ -203,7 +254,6 @@ public class TestCrearInforme {
         clientUno.afegeix(lloguerBasic);
 
 
-
         assertEquals(clientUno.informe(), "Informe de lloguers del client Dimitar (12345678)\n" +
                 "\tTata Vista: 1800.0€\n" +
                 "Import a pagar: 1800.0€\n" +
@@ -211,7 +261,7 @@ public class TestCrearInforme {
     }
 
 
-@Test
+    @Test
     public void testInformeHTML() throws ParseException {
 
         // demostració de construcció d'un vehicle de categoria BASIC
@@ -228,14 +278,14 @@ public class TestCrearInforme {
         clientUno.afegeix(lloguerBasic);
 
 
-        assertEquals(clientUno.informeHTML(),"<h1>Informe de lloguers</h1>\n"+
-                 "<p>Informe de lloguers del client <em>Dimitar</em> (<strong>12345678</strong>)</p>\n" +
-                 "<table>\n" +
-                 "<tr><td><strong>Marca</strong></td><td><strong>Model</strong></td><td><strong>Import</strong></td></tr>\n" +
-                 "\t<tr><td>Tata</td><td>Vista</td><td>90.0€</td></tr>\n" +
-                 "</table>\n" +
-                 "<p>Import a pagar: <em>90.0€</em></p>\n" +
-                 "<p>Punts guanyats: <em>1</em></p>");
+        assertEquals(clientUno.informeHTML(), "<h1>Informe de lloguers</h1>\n" +
+                "<p>Informe de lloguers del client <em>Dimitar</em> (<strong>12345678</strong>)</p>\n" +
+                "<table>\n" +
+                "<tr><td><strong>Marca</strong></td><td><strong>Model</strong></td><td><strong>Import</strong></td></tr>\n" +
+                "\t<tr><td>Tata</td><td>Vista</td><td>90.0€</td></tr>\n" +
+                "</table>\n" +
+                "<p>Import a pagar: <em>90.0€</em></p>\n" +
+                "<p>Punts guanyats: <em>1</em></p>");
     }
 
     @Test
@@ -258,17 +308,16 @@ public class TestCrearInforme {
         clientUno.afegeix(lloguerDos);
 
 
-        assertEquals(clientUno.informeHTML(),"<h1>Informe de lloguers</h1>\n"+
+        assertEquals(clientUno.informeHTML(), "<h1>Informe de lloguers</h1>\n" +
                 "<p>Informe de lloguers del client <em>Dimitar</em> (<strong>12345678</strong>)</p>\n" +
                 "<table>\n" +
                 "<tr><td><strong>Marca</strong></td><td><strong>Model</strong></td><td><strong>Import</strong></td></tr>\n" +
-                "\t<tr><td>Mercedes</td><td>SLK</td><td>360.0€</td></tr>\n" +
+                "\t<tr><td>Tata</td><td>Vista</td><td>90.0€</td></tr>\n" +
                 "\t<tr><td>Mercedes</td><td>SLK</td><td>540.0€</td></tr>\n" +
                 "</table>\n" +
-                "<p>Import a pagar: <em>900.0€</em></p>\n" +
-                "<p>Punts guanyats: <em>4</em></p>");
+                "<p>Import a pagar: <em>630.0€</em></p>\n" +
+                "<p>Punts guanyats: <em>3</em></p>");
     }
-
 
 
 }

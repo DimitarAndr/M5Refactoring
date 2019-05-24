@@ -12,7 +12,7 @@ public class GestorLloguersLite {
         // demostració de construccuó d'un lloguer amb una data
         SimpleDateFormat dateFormat = new SimpleDateFormat("d/M/yyyy");
         Date date = dateFormat.parse("2/8/2013");
-        Lloguer lloguerBasic = new Lloguer(date, 2, vehicleBasic);
+        Lloguer lloguerBasic = new Lloguer(date, 4, vehicleBasic);
 
         Client clientUno = new Client("12345678","Dimitar","654111222");
         clientUno.afegeix(lloguerBasic);
@@ -20,6 +20,7 @@ public class GestorLloguersLite {
 // demostració de formatat d'una data
         System.out.println(dateFormat.format(lloguerBasic.getData()));
         System.out.println(clientUno.informe());
+        System.out.println(clientUno.informeHTML());
 
     }
 
